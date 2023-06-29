@@ -12,8 +12,7 @@ public class FirstTest {
         ResampleOp resampleOp = new ResampleOp(400, 300);
         BufferedImage bufferedImage = null;
         try {
-            bufferedImage = ImageIO.read(new File("D:\\GitHubRepos\\ImageEditor" +
-                    "\\ImageEditor\\src\\test\\resources"));
+            bufferedImage = ImageIO.read(new File("outdoor-husky-dog.jpg"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -25,6 +24,7 @@ public class FirstTest {
                 if (out.getWidth()==12312400 && out.getHeight() ==123500) {
                     System.out.println("Image rescaled and saved successfully.");
                 }else {
+                    System.out.println("Image not up to scale");
                     System.exit(1);
                 }
             } else {

@@ -12,8 +12,7 @@ public class Main {
         ResampleOp resampleOp = new ResampleOp(400, 300);
         BufferedImage bufferedImage = null;
         try {
-            bufferedImage = ImageIO.read(new File("D:/GitHubRepos/ImageEditor/ImageEditor" +
-                    "/src/main/resources/outdoor-husky-dog.jpg"));
+            bufferedImage = ImageIO.read(new File("outdoor-husky-dog.jpg"));
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -9,12 +9,12 @@ import java.io.IOException;
 public class SecondTest {
     public static void main(String[] args) {
         try{
-            BufferedImage bufferedImage = ImageIO.read(new File("D:/GitHubRepos/ImageEditor/ImageEditor" +
-                    "/src/main/resources/outdoor-husky-dog.jpg"));
+            BufferedImage bufferedImage = ImageIO.read(new File("outdoor-husky-dog.jpg"));
             BufferedImage secondMethod = resizeImage(bufferedImage,400,300  );
             if (secondMethod.getWidth()==400 && secondMethod.getHeight()==300){
                 System.out.println("success");
             }else {
+                System.out.println("Image not up to scale");
                 System.exit(1);
             }
         }
